@@ -1,0 +1,191 @@
+Unix training
+
+hardware->kernel->shell->applications and utilities
+   |
+(terminals,printers,disks)
+
+DBMS NOTES
+
+database : organised form of data in thr form of tables , tables can be created with the help of rows and columns
+no of col - degree of the tables
+no of rows - cardinality of the tables
+
+A single database can contains multiple tables
+single tables contains multiple col and rows
+we can created relations b/w more than one table with the help of primary and foreign keys 
+where primary key cannot contains null values , cannot be left blank, also it cannot contains duplicates values/value
+
+after creation of primary key in one table we can create foreign key/keys in another table/tables to create relations b/w the tables
+here foreign key can contains null value as well and also it can contains duplicate values
+
+
+Dbms -  is an database software where we can store the relational data , insert,
+
+
+-----DOCKER LECTURE----
+
+linux - node v16 , redis v6
+whenever we tried to run a local environment to another machine , then following
+issues
+	1. its an manual process to setup everything manually , then we can get manual errors
+	2. in one app (linux) only specific version can be run like, node v6 only, then it will cause problem in another system
+		
+	3. also it can be in linux we r using cli command which will not run in mac
+
+Docker container - single unit or an container with installation and all the dependencies, then will share with other sytem ,
+	it can run in any system
+docker helps to make those container with all dependencies
+
+containers are portable(machine independent) , lightweight(easily installed, update, destroyed)
+
+It will part in local machine but it will be completely different from our machine
+
+In container , u can have premanaged dependencies then it can used by other machine
+
+Docker image :- It is an executable files, which have an instruction, how a container making process should be done
+
+This image is what is shared with the other machines or members
+
+Image is an static snapshot of what the local code or dependencies , or local environment will look like
+
+Its basically gives the blueprint how our container should look like
+
+Resources will be using by our containers,not the image
+
+--steps to run docker images :
+
+1. install docker desktop in ur system
+2. then search for any image and pull it in via terminal , (docker pull image-name)
+3. to run an images we have to convert it into an container (docker run image-name)
+
+docker v/s vm 
+
+- vm hides the whole operating sytem i.e. (application layer and host os kernel)
+- docker only hides application layer and work accordingly not the host os kernel
+- docker is lightweight like mb,kb but vm takes to gbs also
+
+docker specifically designed for linux os, but if want to work with other os , docker desktop is used,
+
+docker desktop will create an lightweight hyperviser layer which internally uses light weight linux distributions, then container run on that layer
+
+
+---Agile in software engineering---
+
+1. means move quickly (it not like that working in phases and complete those like waterfall models)
+2. large projects -> small chunks(iterations) then woring parallely on those iterations
+3. then release -> feedback(based on feedback if any changes or advancemnets is required then we can do that and )->re-release
+
+size of agile model teams - 8-9 
+4-5 developers, 1 tester , 1 tech lead, 1 scrum master, 1 product lead
+advantages 
+	frequent delivery
+	face to face communication with client
+	changes
+	time 
+disadvantages
+	less documentation
+	maintanence problem
+
+Team is very flexible, here there is nothing to like follow any heirarchy
+Here, everything works weekly, weekly reports are there
+
+How does software made?
+synopsis -> srs(software requiements specification) made by solution designer with the help of system analyst, approved by sol. architect , then lead sol. architect -> 
+
+application modeling ->class,sequence,use case diagram
+data modeling - er diagram, schema diagram
+
+-> 
+
+product backlog includes user story, also have burndown chart(from critical-medium-low priority)
+
+product backlog -> product understanding -> product designing 
+							1. wireframes - designing for every single pages , like login, registration form 
+							2.schema diagram(query execution) 
+							3. user-interface design
+							4. class execution and connection between everything 
+						 -> scrum master underestands is everything
+
+1. product owner - gives product backlog,runs product from business perspective,sets the dates and content delivery
+
+2. scrum master -  handles everythings , daily standups, meetings , team lead also , enable close co-operation of everthing 
+
+3. developers -
+
+4. Tester - Junit (unit testing) tested by developers
+
+5 . When the requirement is completed - 
+	The agile team decides the meaning of task done , there are diff criteria
+					- when entire task(development,testing) are completed.
+					- when all the acceptence tests are running and are passes(in product backlog)
+					- when no defects found
+					- product owner accepted the requirement
+					- when software is delivered to end user
+
+-> Sprint doc represent all the information about who will do how ?
+
+
+--Agile and Devops---
+
+Devops tools(used to automate proceses) - git,github,gitlab, docker, kubernetes,
+
+
+-------CI/CD PIPELINES---------------------------
+
+CI (continuous integration) : its related to the unit test case,basically , i.e
+					continuous integration of existing test cases and 
+					our unit test cases also will run, and on the basis
+					report will generate whether project is working fne
+					or not.			
+CD(continuous deployment) : deployement of code to development to qa 
+
+Pipelines is an set jobs which is written inside an jenkins, what is do first:
+	1. take the whole application code and run the unit test cases, give the
+	   report , if it is green, it will go to the CD pipelines
+	2. It will take code from CI
+
+Jenkins is an automated tool which is used in CI/CD pipelines automations,makes 
+easy to deployment.
+
+Developer ------> QA(test the code, functional testing)
+
+Process:-
+
+1. written code + unit test cases in local system, run and test and everything is fine
+2. pushed the code on github
+3. code+test -> github -> Jenkin's CI --- CD pipelines -> 
+4. CI pipelines : test and run the test cases and gives the report , if its green
+			transfer the code to CD
+5. CD pipelines : take the code from CI and then git and send to the QA for further
+			testing(funtional or automated)
+6. QA testing will start
+
+
+All in one :-
+
+CI/CD pipelines is an process of building, testing and deploying of applications
+everytime u make a code change in ur repository, so that u can update or change 
+ur applications faster.
+
+
+ 
+create a maven project -> create a simple project -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
